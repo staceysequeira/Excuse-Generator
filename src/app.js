@@ -3,11 +3,10 @@ import "bootstrap";
 import "./style.css";
 
 window.onload = () => {
-  //write your code here
-  document.querySelector("#the-excuse").innerHTML = generateExcuse();
-  console.log("Hello Rigo from the console");
+  document.querySelector("#button").addEventListener("click", () => {
+    document.querySelector("#the-excuse").innerHTML = generateExcuse();
+  });
 };
-
 let generateExcuse = () => {
   let who = [
     "A blind dog",
@@ -15,15 +14,15 @@ let generateExcuse = () => {
     "A swarm of narcoleptic clowns",
     "A rovering gang of pre-schoolers"
   ];
-  let action = ["vomited", "threw", "glitter-bombed", "chased"];
+  let action = ["vomited", "threw", "glitter-bombed", "slapped"];
 
   let what = ["hairballs", "hot garbage", "people", "slime"];
 
   let where = [
     "in my car",
     "on the highway",
-    "on the way hell",
-    "on a Chinese spy balloon"
+    "on my clothes",
+    "towards my face"
   ];
 
   let whoIndex = Math.floor(Math.random() * who.length);

@@ -1,1 +1,97 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: white;
+}
+
+.container {
+  background-color: gainsboro;
+  width: 500px;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+#firstMessage {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #a8ddfd;
+  width: 200px;
+  height: 100px;
+  text-align: left;
+  border: 1px solid #97c6e3;
+  border-radius: 10px;
+}
+
+#firstMessage::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #a8ddfd;
+  border-top: 10px solid #a8ddfd;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
+}
+
+#returnMessage {
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: calc(100% - 220px);
+  padding: 10px;
+  background-color: #f8e896;
+  width: 200px;
+  height: 75px;
+  text-align: left;
+  border: 1px solid #dfd087;
+  border-radius: 10px;
+}
+
+/* #returnMessage::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #00bfb6;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  right: 19px;
+  bottom: -19px;
+} */
+
+#the-excuse {
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: calc(100% - 220px);
+  padding: 10px;
+  background-color: #f8e896;
+  width: 200px;
+  height: 125px;
+  text-align: left;
+  border: 1px solid #dfd087;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#the-excuse::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #f8e896;
+  border-top: 10px solid #f8e896;
+  border-bottom: 10px solid transparent;
+  right: 10px;
+  bottom: -19px;
+}
+
+#button {
+  margin: auto;
+  display: flex;
+}
